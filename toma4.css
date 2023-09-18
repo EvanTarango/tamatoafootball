@@ -1,0 +1,79 @@
+*{
+    margin: 0 auto; 
+}
+
+body{
+    background-color: white; 
+}
+header{
+    background-color: rgb(26, 30, 100);
+    width: auto; 
+    height: 15vh;
+}
+h3{
+    position: relative; 
+    text-align: center; 
+    color: white; 
+    font-size: 25px; 
+}
+h1{
+    color: white; 
+    position: relative; 
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: .3rem;
+    text-shadow: 1px 1px 1px; 
+}
+/* Style for the hamburger icon */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Style for the open navigation links */
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 10px 0;
+}
+
+/* Media query to hide/show the hamburger icon based on screen size */
+@media (max-width: 1700px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navigation {
+        display: none;
+        font-size: 25px; 
+        flex-direction: column;
+        text-align: center;
+        background-color: red;
+        padding: 2px;
+        position: relative;/* Adjust the top position as needed */
+        right: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+}
+.navigation:hover{
+    cursor: pointer; 
+}
