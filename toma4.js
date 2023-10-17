@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-       ffunction playPause() {
+       function playPause() {
         var video = document.querySelector('video');
         if (video.paused)
             video.play();
